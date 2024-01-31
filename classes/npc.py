@@ -1,6 +1,8 @@
 class npc():
-    """ Класс для описания врагов """
+    """ Класс для описания NPC """
 
-    def __init__(self, name = "", phrases = []):
+    def __init__(self, name = ""):
         self.name = name
-        self.phrases = phrases
+    
+    def say(self, text):
+        return f"{self.name}: {text}"
