@@ -1,6 +1,7 @@
 from classes.settings import Settings
 from classes.davion import Davion
 from levels.prologue import Prologue
+from levels.tavern_Ragnars_Tail import TavernRagnarsTail
 
 class Game():
     """ Класс для создания игры """
@@ -11,9 +12,11 @@ class Game():
         self.davion = Davion(self)
 
         self.level_1 = Prologue(self)
+        self.level_2 = TavernRagnarsTail(self)
     
     def run_game(self):
         self.level_1.start_level()
+        self.level_2.start_level()
 
 if __name__ == "__main__":
     game = Game()

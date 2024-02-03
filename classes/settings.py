@@ -5,4 +5,10 @@ class Settings():
         """ Инициализиурем настройки игры """
         
         # Настройки Дэвиона
-        self.davions_name = "Дэвион"
+        self.davion_name = "Дэвион"
+
+        # Настройки Ригварла
+        self.rigvarl_name = "Ригварл"
+
+        # Настройки Пьяных разбойников
+        self.drunken_robbers_name = "Пьяные разбойники"

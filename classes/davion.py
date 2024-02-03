@@ -6,4 +6,8 @@ class Davion():
         self.settings = game.settings
 
         # Настройки Дэвиона
-        self.name = self.settings.davions_name
+        self.name = self.settings.davion_name
+    
+    def say(self, text):
+        if text:
+            return f"{self.name}: {text}"
